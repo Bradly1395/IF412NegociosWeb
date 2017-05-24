@@ -5,7 +5,7 @@ $cmbIternaciones = 5;
 if(isset($_POST["btnEnviar"])){
 $txtMensaje = $_POST["txtMensaje"];
 $cmbIternaciones = intval($_POST["cmbIteraciones"]);
-$resultado = "<ol>";
+$resultado = "<ol reversed>";
 for($i = 0; $i < $cmbIternaciones; $i++){
 $resultado .= "<li>".$txtMensaje."</li>";
 }
